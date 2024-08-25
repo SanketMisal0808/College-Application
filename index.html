@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>College Application Form</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f0f0f0;
+		}
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			padding: 20px;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.form-group {
+			margin-bottom: 20px;
+		}
+		.label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		.input-field {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+		}
+		.button {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		.button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2>College Application Form</h2>
+		<form>
+			<div class="form-group">
+				<label for="name" class="label">Name:</label>
+				<input type="text" id="name" class="input-field" required>
+			</div>
+			<div class="form-group">
+				<label for="email" class="label">Email:</label>
+				<input type="email" id="email" class="input-field" required>
+			</div>
+			<div class="form-group">
+				<label for="phone" class="label">Phone:</label>
+				<input type="tel" id="phone" class="input-field" required>
+			</div>
+			<div class="form-group">
+				<label for="address" class="label">Address:</label>
+				<textarea id="address" class="input-field" required></textarea>
+			</div>
+			<div class="form-group">
+				<label for="program" class="label">Program:</label>
+				<select id="program" class="input-field" required>
+					<option value="">Select a program</option>
+					<option value="Bachelor of Science in Computer Science">Bachelor of Science in Computer Science</option>
+					<option value="Bachelor of Arts in Business Administration">Bachelor of Arts in Business Administration</option>
+					<option value="Bachelor of Science in Engineering">Bachelor of Science in Engineering</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="gpa" class="label">GPA:</label>
+				<input type="number" id="gpa" class="input-field" required>
+			</div>
+			<div class="form-group">
+				<label for="essay" class="label">Essay:</label>
+				<textarea id="essay" class="input-field" required></textarea>
+			</div>
+			<button type="submit" class="button">Submit Application</button>
+		</form>
+	</div>
+</body>
+</html>
